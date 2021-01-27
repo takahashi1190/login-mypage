@@ -1,0 +1,42 @@
+
+<!DOCATYPE HTML>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>マイページの登録</title>
+        <link rel="stylesheet" type="text/css" href="register.css">
+    </head>
+
+<body>
+    <header>
+        <img src="4eachblog_logo.jpg">
+    </header>
+
+    <main>
+        <form action="register_confirm.php" method="post" enctype="multipart/form-data">
+            <div class="form_contents">
+                <h3>ご登録ありがとうございました！</h3>
+                </div>
+                <div class="return">
+                <a href="register.php">新規画面へ戻る</a>
+                </div>
+            </form>
+        </main>
+    <footer>
+    ©️　2018 InterNous.inc. All rights reserved
+    </footer>
+
+    <script>
+    function ConfirmPassword(confirm){
+        var input1 = password.value;
+        var input2 = confirm.value;
+        if (input != input2){
+            confirm.setCustomValidity("パスワードが一致しません。");
+        } else {
+        confirm.setCustomValidity('');
+        }
+    }
+    </script>
+
+    </body>
+    </html>
